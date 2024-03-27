@@ -1,0 +1,160 @@
+﻿
+@{
+    ViewBag.Title = "GetAll";
+}
+
+<h2>GetAll</h2>
+<style>
+
+    .dx-datagrid-headers {
+        color: #ffffff !important;
+        background-color: #1881B6
+    }
+
+    .dx-header-filter {
+        color: #ffffff !important;
+    }
+
+    .dx-header-row > td[role="columnheader"] > div.dx-datagrid-text-content {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .dx-command-edit :nth-child(2) {
+        font-size: 14px;
+        font-weight: bold;
+        color: #ffffff !important;
+    }
+
+    .dx-command-edit:nth-child(2) {
+        background: red;
+    }
+
+    .dx-command-edit:nth-child(1) {
+        background-color: white !important;
+    }
+
+    .dx-toolbar-text-auto-hide .dx-button .dx-icon {
+        width: 18px;
+        height: 18px;
+        background-position: 0 0;
+        background-size: 18px 18px;
+        padding: 0;
+        font-size: 18px;
+        text-align: center;
+        line-height: 18px;
+        margin-right: 0;
+        margin-left: 0;
+        display: none;
+    }
+    .container {
+        width: 1400px;
+    }
+</style>
+
+<h4>Get All Record</h4>
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="demo-container table-responsive">
+            <div id="GetAllStudentList"></div>
+        </div>
+
+    </div>
+</div>
+@section scripts
+{
+    <link href="~/DevExtreme/common.css" rel="stylesheet" />
+    <link href="~/DevExtreme/light.css" rel="stylesheet" />
+    <script src="~/DevExtreme/jszip.min.js"></script>
+    <script src="~/DevExtreme/all.js"></script>
+    <script type="text/javascript">
+        var siteRoot = "@Url.Content("~/")"
+        $(document).ready(function () {
+
+            $.ajax({
+                url: "/Student/GetAllIssuedSimsData",
+                type: "POST",
+                success: function (data) {
+
+                    console.log(data);
+                    $("#GetAllStudentList").dxDataGrid({
+                        dataSource: data,
+                        hoverStateEnabled: true,
+                        allowColumnReordering: true,
+                        allowColumnResizing: true,
+                        columnAutoWidth: true,
+                        showBorders: true,
+                        columnResizingMode: "widget",
+                        onContentReady: function (e) {
+                            e.element.find(".dx-datagrid-export-button").dxButton("instance").option("text", "Export");
+                        },
+                        columns: [
+                            { dataField: "Id", caption: "Id", width: "150" },
+                            { dataField: "Network", caption: "Network", width: "200"  },
+                            { dataField: "SimNo", caption: "Sim No", width: "200", },
+                            { dataField: "Status", caption: "Status", width: "200",  },
+                            {
+                                type: "buttons",
+                                caption: "Action",
+                                buttons: ["edit", {
+                                    hint: "Edit",
+                                    text: "Edit",
+                                    caption: "Edit",
+                                    displayFormat: "Edit",
+                                    onClick: function (e) {
+
+                                        issuesim(e.row.data.Id);
+                                        e.event.preventDefault();
+                                    },
+
+                                },
+
+                                ]
+                            },
+                        ],
+                        summary: {
+                            totalItems: [{
+                                column: 'Id',
+                                summaryType: 'count',
+                                displayFormat: "Total Record: {0}"
+                            },
+                            ],
+                        },
+
+                        height: 650,
+                        width: "100%",
+                        showBorders: true,
+                        loadPanel: { enabled: false },
+                        scrolling: { mode: 'infinite' },
+                        sorting: { mode: "multiple" },
+                        grouping: { autoExpandAll: true, },
+                        searchPanel: { visible: true },
+                        headerFilter: { visible: true },
+                        groupPanel: { visible: false },
+                        filterRow: { visible: true, applyFilter: "auto" },
+                        paging: { enabled: true },
+                        "export": {
+                            enabled: true,
+                            fileName: "GetAllIssuedSimData",
+                        },
+                    });
+                },
+
+                error: function (data) {
+
+                    console.log(data);
+                },
+            });
+        });
+
+
+        function issuesim(e) {
+
+            console.log(e);
+            var url = "@ViewBag.url";
+            setTimeout(function () { document.location.href = url +'/Sim/GetIssuedSimEdit/'+ e}, 100);
+        }
+    </script>
+}
+

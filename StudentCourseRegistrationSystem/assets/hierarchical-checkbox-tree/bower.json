@@ -1,0 +1,23 @@
+{
+  "name": "Hierarchical Checkboxes",
+  "main": "hierarchical-checkboxes.js",
+  "version": "0.0.1",
+  "homepage": "https://github.com/dejavu1987/hierarchical-checkboxes",
+  "authors": [
+    "Anil Maharjan <anil.maharjan@itonics.de>"
+  ],
+  "description": "jQuery for collapsible hierarchical checkboxes",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "hierarchy",
+    "checkboxes",
+    "collapsible",
+    "tree"
+  ],
+  "license": "GNU",
+  "dependencies": {
+    "jQuery": "~2.1.1"
+  }
+}

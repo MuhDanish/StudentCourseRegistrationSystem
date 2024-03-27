@@ -1,0 +1,87 @@
+﻿<!-- JAVASCRIPT -->
+
+<script src="~/assetsNew/libs/jquery/jquery.min.js"></script>
+<script src="~/assetsNew/libs/select2/js/select2.min.js"></script>
+
+
+<script src="~/assetsNew/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="~/assetsNew/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+@*<script src="~/assetsNew/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>*@
+<!-- Buttons examples -->
+@*<script src="~/assetsNew/libs/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+<script src="~/assetsNew/libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js"></script>
+
+<script src="~/assetsNew/libs/datatables.net-buttons/js/buttons.html5.min.js"></script>
+<script src="~/assetsNew/libs/datatables.net-buttons/js/buttons.print.min.js"></script>
+<script src="~/assetsNew/libs/datatables.net-buttons/js/buttons.colVis.min.js"></script>*@
+
+<!-- Responsive examples -->
+@*<script src="~/assetsNew/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+<script src="~/assetsNew/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>*@
+<script src="~/assetsNew/libs/metismenu/metisMenu.min.js"></script>
+<script src="~/assetsNew/libs/simplebar/simplebar.min.js"></script>
+<script src="~/assetsNew/libs/node-waves/waves.min.js"></script>
+<script src="~/assets/js/parsley.min.js"></script>
+<script src="~/assets/js/dropify.min.js"></script>
+<script src="~/Content/kendo/js/kendo.all.min.js" type="text/javascript"></script>
+<script src="~/assets/js/sweetalert.bundle.js"></script>
+<script src="~/assets/js/toasthelper.js"></script>
+
+<script src="~/Content/js/jquery.blockUI.js"></script>
+<script>
+    $(".selProduct").select2();
+    $('.example').DataTable();
+    $(document).ready(function () {
+        $("form").parsley();
+    });
+    $('.dropify').dropify({
+        messages: {
+            default: 'Drag and drop a file here or click',
+            replace: 'Drag and drop or click to replace',
+            remove: 'Remove',
+            error: 'Ooops, something wrong happended.'
+        }
+    });
+    $("#save").click(function () {
+        if ($(this).closest("form").parsley().validate()) {
+            $(this).closest("form").parsley().reset();
+            $.unblockUI();
+        } else {
+            var file = $("#input")[0].files[0];
+            if (file == null) {
+                showWarningToast("Please upload Image");
+                $.unblockUI();
+            }
+        }
+
+    });
+
+    $(".resetbtn").click(function () {
+        $(".dropify-clear").trigger("click");
+    });
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+<script src="~/assetsNew/libs/node-waves/waves.min.js"></script>
+
+<script src="~/assetsNew/js/pages/dashboard.init.js"></script>
+<script src="~/assets/js/invoice.js"></script>
+@*<script src="~/Content/js/jquery-input-mask-phone-number.js"></script>
+    <script src="~/Content/js/jquery-input-mask-phone-number.min.js"></script>*@
+
+<script src="~/assetsNew/libs/parsleyjs/parsley.min.js"></script>
+
+<script src="~/assetsNew/js/pages/form-validation.init.js"></script>
+<!-- App js -->
+<script src="~/assetsNew/js/app.js"></script>
+<script src="~/Content/Scripts/sweetalert.min.js"></script>

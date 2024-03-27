@@ -1,0 +1,65 @@
+﻿
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    @Html.Partial("~/Views/Layout/_title_meta.cshtml")
+    @RenderSection("styles", false)
+    @Html.Partial("~/Views/Layout/_head_css.cshtml")
+    <style>
+        .onhover:hover {
+            color: blue !important;
+        }
+    </style>
+</head>
+
+<body data-sidebar="dark">
+
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+        @Html.Partial("~/Views/Layout/_topbar.cshtml")
+        @Html.Partial("~/Views/Layout/_sidebar.cshtml")
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+
+        <div class="main-content">
+            <div class="page-content">
+                <div class="container-fluid">
+                    @Html.Partial("~/Views/Layout/_page_title.cshtml")
+
+                    @RenderBody()
+
+                    @Html.Partial("~/Views/Layout/_modelLocatioN.cshtml")
+
+
+
+                </div> <!-- container-fluid -->
+            </div>
+            <!-- End Page-content -->
+
+            @Html.Partial("~/Views/Layout/_footer.cshtml")
+        </div>
+        <!-- end main content-->
+
+    </div>
+
+    @*@RenderSection("externalhtml", required: false)*@
+
+    <!-- END layout-wrapper -->
+    @Html.Partial("~/Views/Layout/_right_sidebar.cshtml")
+
+    @Html.Partial("~/Views/Layout/_vendor_scripts.cshtml")
+
+
+    @RenderSection("scripts", required: false)
+    @*<script src="~/assetsNew/js/app.js"></script>*@
+
+
+</body>
+
+</html>

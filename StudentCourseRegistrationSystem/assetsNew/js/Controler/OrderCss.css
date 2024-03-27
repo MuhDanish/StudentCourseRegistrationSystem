@@ -1,0 +1,48 @@
+﻿/*.custome-width input{
+    width:150px;
+}
+.custome-width select {
+    width: 150px;
+}*/
+.swal-overlay {
+    z-index: 11000 !important;
+}
+
+.form-control {
+    height: 26px !important;
+    padding: 1px 1px !important;
+    font-size: 12px !important;
+    padding-right: 8px !important
+}
+
+.table td, .table th {
+    padding: .25rem !important;
+}
+
+.input-group-prepend {
+    height: 26px !important;
+}
+
+hr {
+    margin-top: .50rem !important;
+    margin-bottom: .50rem !important;
+}
+
+
+.text-orange {
+    background-color: orange !important;
+    border-color: orange !important;
+}
+
+.text-orange:hover {
+    background-color: darkorange !important;
+    border-color: darkorange !important;
+}
+
+.ordertype {
+    margin-left: 910px;
+    margin-bottom: 10px;
+    width: 300px;
+}
+
+

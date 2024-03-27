@@ -1,0 +1,12 @@
+{
+  "name": "hierarchical-checkboxes",
+  "version": "1.0.0",
+  "description": "Hierarchical Checkboxes using JQuery",
+  "keywords": ["hierarchical", "checkbox"],
+  "license": "MIT",
+  "author": "anilmaharjan.com.np",
+  "main": "/demo.html",
+  "dependencies": {
+    "jquery": "*"
+  }
+}
