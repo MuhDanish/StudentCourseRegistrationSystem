@@ -1,0 +1,105 @@
+﻿@model StudentCourseRegistrationSystem.Models.Course.CourseDto
+@{
+    ViewBag.Title = "SaveUpdateCourse";
+    Layout = "~/Views/Layout/_Layout.cshtml";
+}
+@section styles{
+
+    <link href="~/assets/css/daterangepicker.css" rel="stylesheet" />
+
+}
+
+<div class="row">
+    <div class="col-12">
+        <div class="page-title-box d-flex align-items-center justify-content-between">
+            <h4 class="mb-0 font-size-18">Course</h4>
+
+            <div class="page-title-right">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item"><a href="/Course/ManageCourse">Manage Course</a></li>
+                    <li class="breadcrumb-item active"> Create Course</li>
+                </ol>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+@*@using (Html.BeginForm("SaveUpdateCourse", "Course", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{*@
+    @Html.HiddenFor(a => a.CourseId)
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="col-sm-6">
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label>CourseCode<span class="required">*</span></label>
+                            <div class="controls">
+                                @Html.TextBoxFor(model => model.CourseCode, new { @type = "text", @class = "form-control", @data_parsley_required_message = "Please Enter the Code", @placeholder = "Enter Course Code", @required = "required" })
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label>CourseName<span class="required">*</span></label>
+                            <div class="controls">
+                                @Html.TextBoxFor(model => model.CourseName, new { @type = "text", @class = "form-control", @data_parsley_required_message = "Please Enter the CourseName", @placeholder = "Enter Course Name", @required = "required" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label>TeacherName<span class="required">*</span></label>
+                            <div class="controls">
+                                @Html.TextBoxFor(model => model.TeacherName, new { @type = "text", @class = "form-control", @data_parsley_required_message = "Please Enter the Teacher Name", @placeholder = "Enter Teacher Name", @required = "required" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <div class="controls">
+                                <button type="submit" id="save" class="btn btn-primary">Submit</button>
+                                <button type="reset" class="btn btn-danger">Reset</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group ">
+                            <label>Start Date<span class="required">*</span></label>
+                            <div class="col-sm-9">
+                                <input id="datePicker" value="" name="StartDate" class="" required />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group ">
+                            <label>End Date<span class="required">*</span></label>
+                            <div class="col-sm-9">
+                                <input id="datePicker" value="" name="EndDate" class="" required />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+@*}*@
+
+
+<script src="~/assets/js/custom-date-picker.js"></script>
+<script src="~/assets/js/daterangepicker.js"></script>
+
+<script>
+$(document).ready(function () {
+      $("#datePicker").kendoDatePicker();
+    });
+
+
+
+
+
+</script>

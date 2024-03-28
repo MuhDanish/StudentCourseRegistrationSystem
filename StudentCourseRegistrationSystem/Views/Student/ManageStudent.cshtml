@@ -1,134 +1,107 @@
-﻿
-<h2>ManageStudent</h2>
-@{
-    ViewBag.Title = "ManageStudent";
-}
-
-<div class="row">
-    <div class="col-12">
-        <div class="page-title-box d-flex align-items-center justify-content-between">
-            <h4 class="mb-0 font-size-18">Manage Company</h4>
-
-            <div class="page-title-right">
-                <ol class="breadcrumb m-0">
-                    <li class="breadcrumb-item"><a href="Home/Index">Home</a></li>
-                    <li class="breadcrumb-item active"><a href="">Manage Company</a></li>
-                </ol>
-            </div>
-
-        </div>
-    </div>
-</div>
-<div class="row">
-    <div class="col">
-        <div class="card">
-            <div class="card-body">
-                <div class="row mb-2">
-                    <div class="col-sm-12">
-                        <div class="text-sm-right">
-                            <a type="button" href="/Company/CreateUpdateCompany" class="btn btn-success btn-rounded waves-effect waves-light mb-2 mr-2"><i class="mdi mdi-plus mr-1"></i> Add New Company</a>
-
-                        </div>
-                    </div>
-                </div>
-                <table class="table table-bordered table-striped mb-0 example" id="datatable-default">
-                    <thead>
-                        <tr>
-
-                            <th>Name</th>
-                            <th>Email</th>
-                            <th>Phone Number</th>
-                            <th>Address</th>
-                            <th>City</th>
-                            <th>State</th>
-                            <th>Country</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                     
-                            <tr>
-                                <td>
-                                   Ali
-                                </td>
-                                <td>
-                                    ali@gmail.com
-                                </td>
-                                <td>
-                                    123132131
-                                </td>
-                                <td>
-                                  test test
-                                </td>
-                                <td>
-                                  lahore
-                                </td>
-                                <td>
-                                   punjab
-                                </td>
-                                <td>
-                                    pakistan
-                                </td>
-
-                                <td class="actions">
-
-                                    <a href="/Company/EditCompany/1"><i class="fas fa-pencil-alt"></i></a>
-                                    <a onclick="DeleteCompany(1)" class="delete-row"><i class="far fa-trash-alt"></i></a>
-                                    <a onclick="DeleteComp(1)" class="delete-row"><i class="far fa-trash-alt"></i></a>
-                                </td>
-
-                            </tr>
-                       
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-</div>
-<script>function DeleteCompany(id) {
-        debugger;
-    Swal.fire("Are you sure to delete? ");
-    showSuccessToast("Company Delete Successfully! ");
-        $(".swal2-confirm").click(function () {
-            debugger;
-            $.blockUI();
-            $.ajax({
-                type: "post",
-                url: "/Company/DeleteCompany",
-                data: {
-                    id: id
-                },
-                success: function (data) {
-                    $.unblockUI();
-                    showSuccessToast("Company Delete Successfully! ");
-                    setTimeout(function () {
-                        window.location.reload();
-                    }, 1000);
-                },
-
-            });
-        });
+﻿@model IEnumerable<StudentCourseRegistrationSystem.Models.Student.StudentDto>
+    @{
+        ViewBag.Title = "ManageStudent";
     }
 
-    function DeleteComp(id) {
-        debugger;
-        Swal.fire("Are you sure to delete? ");
-        $(".swal2-confirm").click(function () {
-            $.blockUI();
-            $.ajax({
-                type: "post",
-                url: "/Company/DeleteCom",
-                data: {
-                    id: id
-                },
-                success: function (data) {
-                    $.unblockUI();
-                    showSuccessToast("Company Deletrtre Successfully! ");
-                    setTimeout(function () {
-                        window.location.reload();
-                    }, 1000);
-                },
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-flex align-items-center justify-content-between">
+                <h4 class="mb-0 font-size-18">Manage Student</h4>
 
+                <div class="page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active"><a href="">Manage Student</a></li>
+                    </ol>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row mb-2">
+                        <div class="col-sm-12">
+                            <div class="text-sm-right">
+                                <a type="button" href="/Student/SaveUpdateStudent" class="btn btn-success btn-rounded waves-effect waves-light mb-2 mr-2"><i class="mdi mdi-plus mr-1"></i> Add New Student</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <table class="table table-bordered table-striped mb-0 example" id="datatable-default">
+                        <thead>
+                            <tr>
+
+                                <th>Student Id</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Gender</th>
+                                <th>Address1</th>
+                                <th>Address2</th>
+                                <th>Address3</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        @item.StudentId
+                                    </td>
+                                    <td>
+                                        @item.FirstName
+                                    </td>
+                                    <td>
+                                        @item.Surname
+                                    </td>
+                                    <td>
+                                        @item.Gender
+                                    </td>
+                                    <td>
+                                        @item.Address1
+                                    </td>
+                                    <td>
+                                        @item.Address2
+                                    </td>
+                                    <td>
+                                        @item.Address3
+                                    </td>
+
+                                    <td class="actions">
+                                        <a href="/Student/EditStudent/@item.StudentId"><i class="fas fa-pencil-alt mr-3"></i></a>
+                                        <a onclick="DeleteStudent(@item.StudentId)" class="delete-row"><i class="far fa-trash-alt"></i></a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+ <script>
+        function DeleteStudent(StudentId) {
+            Swal.fire("Are you sure to delete? ");
+            $(".swal2-confirm").click(function () {
+                $.ajax({
+                    type: "GET",
+                    url: "/Student/DeleteStudent",
+                    data: {
+                        StudentId: StudentId
+                    },
+                    success: function (data) {
+                        showSuccessToast("Delete Successfully! ");
+                        setTimeout(function () {
+                            window.location.reload();
+                        }, 1000);
+                    },
+
+                });
             });
-        });
-    }</script>
+     }
+
+
+ </script>

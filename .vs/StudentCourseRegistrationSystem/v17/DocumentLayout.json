@@ -1,49 +1,49 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\MD\\StudentCourseRegistration\\StudentCourseRegistrationSystem\\",
+  "WorkspaceRootPath": "D:\\StudentCourseRegistrationSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{61A3A6A6-34FF-4665-BCEE-5E021E071010}|StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem.csproj|d:\\md\\studentcourseregistration\\studentcourseregistrationsystem\\studentcourseregistrationsystem\\views\\layout\\_sidebar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{61A3A6A6-34FF-4665-BCEE-5E021E071010}|StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem.csproj|solutionrelative:studentcourseregistrationsystem\\views\\layout\\_sidebar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{61A3A6A6-34FF-4665-BCEE-5E021E071010}|StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem.csproj|D:\\MD\\StudentCourseRegistration\\StudentCourseRegistrationSystem\\studentcourseregistrationsystem\\views\\layout\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{61A3A6A6-34FF-4665-BCEE-5E021E071010}|StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem.csproj|solutionrelative:studentcourseregistrationsystem\\views\\layout\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{61A3A6A6-34FF-4665-BCEE-5E021E071010}|StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem.csproj|D:\\MD\\StudentCourseRegistration\\StudentCourseRegistrationSystem\\studentcourseregistrationsystem\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{61A3A6A6-34FF-4665-BCEE-5E021E071010}|StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem.csproj|D:\\StudentCourseRegistrationSystem\\studentcourseregistrationsystem\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{61A3A6A6-34FF-4665-BCEE-5E021E071010}|StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem.csproj|solutionrelative:studentcourseregistrationsystem\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{61A3A6A6-34FF-4665-BCEE-5E021E071010}|StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem.csproj|D:\\MD\\StudentCourseRegistration\\StudentCourseRegistrationSystem\\studentcourseregistrationsystem\\views\\student\\getall.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{61A3A6A6-34FF-4665-BCEE-5E021E071010}|StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem.csproj|d:\\studentcourseregistrationsystem\\studentcourseregistrationsystem\\views\\layout\\_sidebar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{61A3A6A6-34FF-4665-BCEE-5E021E071010}|StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem.csproj|solutionrelative:studentcourseregistrationsystem\\views\\layout\\_sidebar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61A3A6A6-34FF-4665-BCEE-5E021E071010}|StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem.csproj|D:\\StudentCourseRegistrationSystem\\studentcourseregistrationsystem\\views\\layout\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{61A3A6A6-34FF-4665-BCEE-5E021E071010}|StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem.csproj|solutionrelative:studentcourseregistrationsystem\\views\\layout\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61A3A6A6-34FF-4665-BCEE-5E021E071010}|StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem.csproj|D:\\StudentCourseRegistrationSystem\\studentcourseregistrationsystem\\views\\student\\getall.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{61A3A6A6-34FF-4665-BCEE-5E021E071010}|StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem.csproj|solutionrelative:studentcourseregistrationsystem\\views\\student\\getall.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{61A3A6A6-34FF-4665-BCEE-5E021E071010}|StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem.csproj|D:\\MD\\StudentCourseRegistration\\StudentCourseRegistrationSystem\\studentcourseregistrationsystem\\views\\student\\managestudent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{61A3A6A6-34FF-4665-BCEE-5E021E071010}|StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem.csproj|D:\\StudentCourseRegistrationSystem\\studentcourseregistrationsystem\\views\\student\\managestudent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{61A3A6A6-34FF-4665-BCEE-5E021E071010}|StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem.csproj|solutionrelative:studentcourseregistrationsystem\\views\\student\\managestudent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{61A3A6A6-34FF-4665-BCEE-5E021E071010}|StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem.csproj|D:\\MD\\StudentCourseRegistration\\StudentCourseRegistrationSystem\\studentcourseregistrationsystem\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{61A3A6A6-34FF-4665-BCEE-5E021E071010}|StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem.csproj|D:\\StudentCourseRegistrationSystem\\studentcourseregistrationsystem\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{61A3A6A6-34FF-4665-BCEE-5E021E071010}|StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem.csproj|solutionrelative:studentcourseregistrationsystem\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{61A3A6A6-34FF-4665-BCEE-5E021E071010}|StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem.csproj|D:\\MD\\StudentCourseRegistration\\StudentCourseRegistrationSystem\\studentcourseregistrationsystem\\repository\\student\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{61A3A6A6-34FF-4665-BCEE-5E021E071010}|StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem.csproj|D:\\StudentCourseRegistrationSystem\\studentcourseregistrationsystem\\repository\\student\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{61A3A6A6-34FF-4665-BCEE-5E021E071010}|StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem.csproj|solutionrelative:studentcourseregistrationsystem\\repository\\student\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{61A3A6A6-34FF-4665-BCEE-5E021E071010}|StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem.csproj|D:\\MD\\StudentCourseRegistration\\StudentCourseRegistrationSystem\\studentcourseregistrationsystem\\common\\dbconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{61A3A6A6-34FF-4665-BCEE-5E021E071010}|StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem.csproj|D:\\StudentCourseRegistrationSystem\\studentcourseregistrationsystem\\common\\dbconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{61A3A6A6-34FF-4665-BCEE-5E021E071010}|StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem.csproj|solutionrelative:studentcourseregistrationsystem\\common\\dbconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{61A3A6A6-34FF-4665-BCEE-5E021E071010}|StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem.csproj|D:\\MD\\StudentCourseRegistration\\StudentCourseRegistrationSystem\\studentcourseregistrationsystem\\common\\adohelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{61A3A6A6-34FF-4665-BCEE-5E021E071010}|StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem.csproj|D:\\StudentCourseRegistrationSystem\\studentcourseregistrationsystem\\common\\adohelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{61A3A6A6-34FF-4665-BCEE-5E021E071010}|StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem.csproj|solutionrelative:studentcourseregistrationsystem\\common\\adohelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{61A3A6A6-34FF-4665-BCEE-5E021E071010}|StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem.csproj|D:\\MD\\StudentCourseRegistration\\StudentCourseRegistrationSystem\\studentcourseregistrationsystem\\repository\\course\\courserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{61A3A6A6-34FF-4665-BCEE-5E021E071010}|StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem.csproj|D:\\StudentCourseRegistrationSystem\\studentcourseregistrationsystem\\repository\\course\\courserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{61A3A6A6-34FF-4665-BCEE-5E021E071010}|StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem.csproj|solutionrelative:studentcourseregistrationsystem\\repository\\course\\courserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{61A3A6A6-34FF-4665-BCEE-5E021E071010}|StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem.csproj|D:\\MD\\StudentCourseRegistration\\StudentCourseRegistrationSystem\\studentcourseregistrationsystem\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{61A3A6A6-34FF-4665-BCEE-5E021E071010}|StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem.csproj|D:\\StudentCourseRegistrationSystem\\studentcourseregistrationsystem\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{61A3A6A6-34FF-4665-BCEE-5E021E071010}|StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem.csproj|solutionrelative:studentcourseregistrationsystem\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -54,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,36 +62,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "_sidebar.cshtml",
-              "DocumentMoniker": "D:\\MD\\StudentCourseRegistration\\StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem\\Views\\Layout\\_sidebar.cshtml",
+              "DocumentMoniker": "D:\\StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem\\Views\\Layout\\_sidebar.cshtml",
               "RelativeDocumentMoniker": "StudentCourseRegistrationSystem\\Views\\Layout\\_sidebar.cshtml",
-              "ToolTip": "D:\\MD\\StudentCourseRegistration\\StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem\\Views\\Layout\\_sidebar.cshtml",
+              "ToolTip": "D:\\StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem\\Views\\Layout\\_sidebar.cshtml",
               "RelativeToolTip": "StudentCourseRegistrationSystem\\Views\\Layout\\_sidebar.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-03-27T06:51:50.944Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\MD\\StudentCourseRegistration\\StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem\\Views\\Layout\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "StudentCourseRegistrationSystem\\Views\\Layout\\_Layout.cshtml",
-              "ToolTip": "D:\\MD\\StudentCourseRegistration\\StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem\\Views\\Layout\\_Layout.cshtml",
-              "RelativeToolTip": "StudentCourseRegistrationSystem\\Views\\Layout\\_Layout.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-27T06:51:44.369Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
               "Title": "ManageStudent.cshtml",
-              "DocumentMoniker": "D:\\MD\\StudentCourseRegistration\\StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem\\Views\\Student\\ManageStudent.cshtml",
+              "DocumentMoniker": "D:\\StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem\\Views\\Student\\ManageStudent.cshtml",
               "RelativeDocumentMoniker": "StudentCourseRegistrationSystem\\Views\\Student\\ManageStudent.cshtml",
-              "ToolTip": "D:\\MD\\StudentCourseRegistration\\StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem\\Views\\Student\\ManageStudent.cshtml",
+              "ToolTip": "D:\\StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem\\Views\\Student\\ManageStudent.cshtml",
               "RelativeToolTip": "StudentCourseRegistrationSystem\\Views\\Student\\ManageStudent.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -101,9 +89,9 @@
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "D:\\MD\\StudentCourseRegistration\\StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem\\Views\\_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "StudentCourseRegistrationSystem\\Views\\_ViewStart.cshtml",
-              "ToolTip": "D:\\MD\\StudentCourseRegistration\\StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem\\Views\\_ViewStart.cshtml",
+              "ToolTip": "D:\\StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem\\Views\\_ViewStart.cshtml",
               "RelativeToolTip": "StudentCourseRegistrationSystem\\Views\\_ViewStart.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -113,9 +101,9 @@
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "AdoHelper.cs",
-              "DocumentMoniker": "D:\\MD\\StudentCourseRegistration\\StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem\\Common\\AdoHelper.cs",
+              "DocumentMoniker": "D:\\StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem\\Common\\AdoHelper.cs",
               "RelativeDocumentMoniker": "StudentCourseRegistrationSystem\\Common\\AdoHelper.cs",
-              "ToolTip": "D:\\MD\\StudentCourseRegistration\\StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem\\Common\\AdoHelper.cs",
+              "ToolTip": "D:\\StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem\\Common\\AdoHelper.cs",
               "RelativeToolTip": "StudentCourseRegistrationSystem\\Common\\AdoHelper.cs",
               "ViewState": "AQIAAAQAAAAAAAAAAAAUwAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -125,9 +113,9 @@
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "CourseRepository.cs",
-              "DocumentMoniker": "D:\\MD\\StudentCourseRegistration\\StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem\\Repository\\Course\\CourseRepository.cs",
+              "DocumentMoniker": "D:\\StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem\\Repository\\Course\\CourseRepository.cs",
               "RelativeDocumentMoniker": "StudentCourseRegistrationSystem\\Repository\\Course\\CourseRepository.cs",
-              "ToolTip": "D:\\MD\\StudentCourseRegistration\\StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem\\Repository\\Course\\CourseRepository.cs",
+              "ToolTip": "D:\\StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem\\Repository\\Course\\CourseRepository.cs",
               "RelativeToolTip": "StudentCourseRegistrationSystem\\Repository\\Course\\CourseRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -135,11 +123,36 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "D:\\StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "StudentCourseRegistrationSystem\\Controllers\\StudentController.cs",
+              "ToolTip": "D:\\StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "StudentCourseRegistrationSystem\\Controllers\\StudentController.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAowCYAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T05:31:08.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem\\Views\\Layout\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "StudentCourseRegistrationSystem\\Views\\Layout\\_Layout.cshtml",
+              "ToolTip": "D:\\StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem\\Views\\Layout\\_Layout.cshtml",
+              "RelativeToolTip": "StudentCourseRegistrationSystem\\Views\\Layout\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-27T06:51:44.369Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 6,
               "Title": "StudentRepository.cs",
-              "DocumentMoniker": "D:\\MD\\StudentCourseRegistration\\StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem\\Repository\\Student\\StudentRepository.cs",
+              "DocumentMoniker": "D:\\StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem\\Repository\\Student\\StudentRepository.cs",
               "RelativeDocumentMoniker": "StudentCourseRegistrationSystem\\Repository\\Student\\StudentRepository.cs",
-              "ToolTip": "D:\\MD\\StudentCourseRegistration\\StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem\\Repository\\Student\\StudentRepository.cs",
+              "ToolTip": "D:\\StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem\\Repository\\Student\\StudentRepository.cs",
               "RelativeToolTip": "StudentCourseRegistrationSystem\\Repository\\Student\\StudentRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwA4AAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -149,9 +162,9 @@
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "DBConnection.cs",
-              "DocumentMoniker": "D:\\MD\\StudentCourseRegistration\\StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem\\Common\\DBConnection.cs",
+              "DocumentMoniker": "D:\\StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem\\Common\\DBConnection.cs",
               "RelativeDocumentMoniker": "StudentCourseRegistrationSystem\\Common\\DBConnection.cs",
-              "ToolTip": "D:\\MD\\StudentCourseRegistration\\StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem\\Common\\DBConnection.cs",
+              "ToolTip": "D:\\StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem\\Common\\DBConnection.cs",
               "RelativeToolTip": "StudentCourseRegistrationSystem\\Common\\DBConnection.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -161,9 +174,9 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "GetAll.cshtml",
-              "DocumentMoniker": "D:\\MD\\StudentCourseRegistration\\StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem\\Views\\Student\\GetAll.cshtml",
+              "DocumentMoniker": "D:\\StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem\\Views\\Student\\GetAll.cshtml",
               "RelativeDocumentMoniker": "StudentCourseRegistrationSystem\\Views\\Student\\GetAll.cshtml",
-              "ToolTip": "D:\\MD\\StudentCourseRegistration\\StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem\\Views\\Student\\GetAll.cshtml",
+              "ToolTip": "D:\\StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem\\Views\\Student\\GetAll.cshtml",
               "RelativeToolTip": "StudentCourseRegistrationSystem\\Views\\Student\\GetAll.cshtml",
               "ViewState": "AQIAAJcAAAAAAAAAAAAAAJYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -171,23 +184,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "StudentController.cs",
-              "DocumentMoniker": "D:\\MD\\StudentCourseRegistration\\StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem\\Controllers\\StudentController.cs",
-              "RelativeDocumentMoniker": "StudentCourseRegistrationSystem\\Controllers\\StudentController.cs",
-              "ToolTip": "D:\\MD\\StudentCourseRegistration\\StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem\\Controllers\\StudentController.cs",
-              "RelativeToolTip": "StudentCourseRegistrationSystem\\Controllers\\StudentController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAB8AAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-27T05:31:08.656Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 10,
               "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\MD\\StudentCourseRegistration\\StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem\\Controllers\\HomeController.cs",
+              "DocumentMoniker": "D:\\StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "StudentCourseRegistrationSystem\\Controllers\\HomeController.cs",
-              "ToolTip": "D:\\MD\\StudentCourseRegistration\\StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\StudentCourseRegistrationSystem\\StudentCourseRegistrationSystem\\Controllers\\HomeController.cs",
               "RelativeToolTip": "StudentCourseRegistrationSystem\\Controllers\\HomeController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

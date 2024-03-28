@@ -1,7 +1,9 @@
 ﻿using Newtonsoft.Json;
+using StudentCourseRegistrationSystem.Models.Student;
 using StudentCourseRegistrationSystem.Repository.Student;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -31,7 +33,37 @@ namespace StudentCourseRegistrationSystem.Controllers
         [HttpGet]
         public ActionResult ManageStudent()
         {
-            return View();
+            var data = studentRepository.GetAllStudentsList();
+            return View(data);
         }
+
+        [HttpGet]
+        public ActionResult SaveUpdateStudent()
+        {
+            StudentDto student = new StudentDto();
+            return View(student);
+        }
+
+        [HttpPost]
+        public ActionResult SaveUpdateStudent(StudentDto model)
+        {
+            var data=studentRepository.AddUpdateStudent(model);
+            return Content(JsonConvert.SerializeObject(data, Formatting.None), "application/json");
+        }
+
+        [HttpGet]
+        public ActionResult GetStudentById(int StudentId)
+        {
+            DataTable dt = new DataTable();
+            dt = studentRepository.GetStudentByStudentId(StudentId);
+            return Content(JsonConvert.SerializeObject(dt, Formatting.None), "application/json");
+        }
+        [HttpGet]
+        public ActionResult DeleteStudent(int StudentId)
+        {
+           var data= studentRepository.DeleteStudent(StudentId);
+           return Content(JsonConvert.SerializeObject(data, Formatting.None), "application/json");
+        }
+
     }
 }

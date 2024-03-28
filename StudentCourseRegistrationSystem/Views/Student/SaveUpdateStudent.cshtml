@@ -1,0 +1,186 @@
+﻿@model StudentCourseRegistrationSystem.Models.Student.StudentDto
+@{
+    ViewBag.Title = "SaveUpdateStudent";
+
+
+}
+@section styles{
+
+    <link href="~/assets/css/daterangepicker.css" rel="stylesheet" />
+
+}
+
+<div class="row">
+    <div class="col-12">
+        <div class="page-title-box d-flex align-items-center justify-content-between">
+            <h4 class="mb-0 font-size-18">Student</h4>
+
+            <div class="page-title-right">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item"><a href="/Company/GetAll">Manage Student</a></li>
+                    <li class="breadcrumb-item active"> Create Student</li>
+                </ol>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+@*@using (Html.BeginForm("SaveUpdateStudent", "Student", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {*@
+@* @Html.HiddenFor(a => a.StudentId, new { @type = "text", @id = "StudentId", @class = "form-control", @data_parsley_required_message = "Please Enter the Name", @placeholder = "Enter Name", @required = "required" })*@
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="col-sm-6">
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label>FirstName<span class="required">*</span></label>
+                        <div class="controls">
+                            @Html.TextBoxFor(model => model.FirstName, new { @type = "text", @id = "FirstName", @class = "form-control", @data_parsley_required_message = "Please Enter the Name", @placeholder = "Enter Name", @required = "required" })
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label>Surname<span class="required">*</span></label>
+                        <div class="controls">
+                            @Html.TextBoxFor(model => model.Surname, new { @type = "text", @id = "Surname", @class = "form-control", @data_parsley_required_message = "Please Enter the SureName", @placeholder = "Enter Email", @required = "required" })
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label>Gender<span class="required">*</span></label>
+                        <div class="controls">
+                            @Html.DropDownList("Gender", new SelectList(new[]
+                                {
+                                    new SelectListItem { Text = "Male", Value = "Male" },
+                                    new SelectListItem { Text = "Female", Value = "Female" }
+                                }, "Value", "Text"), "---Select Gender----", new { @class = "form-control", @id = "Gender", @data_parsley_required_message = "Please Choose the Gender", @required = "required" })
+                        </div>
+                    </div>
+                </div>
+                @*<div class="col-sm-6">
+                        <div class="form-group ">
+                            <label>Date Of Birth<span class="required">*</span></label>
+                            <div class="col-sm-9">
+                                <input id="datePicker" value="" name="DOB" class="DOB" required />
+                            </div>
+                        </div>
+                    </div>*@
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label>Address1<span class="required">*</span></label>
+                        <div class="controls">
+                            @Html.TextBoxFor(model => model.Address1, new { @type = "text", @id = "Address1", @class = "form-control", @data_parsley_required_message = "Please Enter the Address", @placeholder = "Enter Address1", @required = "required" })
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label>Address2<span class="required">*</span></label>
+                        <div class="controls">
+                            @Html.TextBoxFor(model => model.Address2, new { @type = "text", @id = "Address2", @class = "form-control", @data_parsley_required_message = "Please Enter the Address3", @placeholder = "Enter Address2", @required = "required" })
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label>Address3<span class="required">*</span></label>
+                        <div class="controls">
+                            @Html.TextBoxFor(model => model.Address3, new { @type = "text", @id = "Address3", @class = "form-control", @data_parsley_required_message = "Please Enter the Address3", @placeholder = "Enter Address3", @required = "required" })
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <div class="controls">
+                            <button type="button" id="btnSave" class="btn btn-primary">Save</button>
+                            <button type="reset" class="btn btn-danger">Reset</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+@*}*@
+
+
+<script src="~/assets/js/custom-date-picker.js"></script>
+<script src="~/assets/js/daterangepicker.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $("#datePicker").kendoDatePicker();
+        getStudent();
+    });
+
+    function getStudent() {
+        debugger;
+        var StudnetId = $('#StudnetId').val();
+        $.ajax({
+            url: "/Student/GetStudentById",
+            type: "GET",
+            data: { StudnetId: StudnetId },
+            success: function (data) {
+                debugger;
+                $('#StudentId').val(data.StudentId);
+                $('#FirstName').val(data.FirstName);
+                $('#Surname').val(data.Surname);
+                $('#Gender').val(data.Gender);
+                $('#DOB').val(data.DOB);
+                $('#Address1').val(data.Address1);
+                $('#Address2').val(data.Address2);
+                $('#Address3').val(data.Address3);
+            },
+            error: function (data) {
+                console.log(data);
+            },
+        });
+    }
+    $('#btnSave').click(function () {
+        //var stdvalue = 0;
+        //var Option = 0;
+        //var std = $("#StudentId").val();
+        //if (std == 0) {
+        //    stdvalue = 0;
+        //    Option = 0;
+        //}
+        //else {
+        //    stdvalue = $("#StudentId").val();
+        //    Option=1
+        //}
+        var dto = {
+            StudentId: $("#StudentId").val();,
+            FirstName: $("#FirstName").val(),
+            Surname: $("#Surname").val(),
+            Gender: $("#Gender").val(),
+            DOB: $("#DOB").val(),
+            Address1: $("#Address1").val(),
+            Address2: $("#Address2").val(),
+            Address1: $('#Address3').text()
+        }
+        $.ajax({
+            url: "/Student/SaveUpdateStudent",
+            type: "POST",
+            data: {
+                dto: dto
+            },
+            success: function (data) {
+                alert('Successfully Save!')
+                setTimeout(function () { document.location.href = '/Student/ManageStudent/' }, 100);
+            },
+            error: function (data) {
+                console.log(data);
+            },
+        });
+    });
+</script>
+
+
