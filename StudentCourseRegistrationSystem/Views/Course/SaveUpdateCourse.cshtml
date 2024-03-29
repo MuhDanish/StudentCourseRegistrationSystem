@@ -25,8 +25,8 @@
     </div>
 </div>
 
-@*@using (Html.BeginForm("SaveUpdateCourse", "Course", FormMethod.Post, new { enctype = "multipart/form-data" }))
-{*@
+@using (Html.BeginForm("SaveUpdateCourse", "Course", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
     @Html.HiddenFor(a => a.CourseId)
     <div class="row">
         <div class="col-lg-12">
@@ -59,6 +59,25 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="form-group ">
+                                <label>Start Date<span class="required">*</span></label>
+                                @*<div class="col-sm-9">*@
+                                <input id="datePicker" value="" name="StartDate" class="" required />
+                                @*  </div>*@
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="form-group ">
+                                <label>End Date<span class="required">*</span></label>
+                                @*<div class="col-sm-9">*@
+                                <input id="datePicker2" value="" name="EndDate" class="" required />
+                                @*   </div>*@
+                            </div>
+                        </div>
+                    </div>
+                   
                     <div class="col-sm-6">
                         <div class="form-group">
                             <div class="controls">
@@ -67,27 +86,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6">
-                        <div class="form-group ">
-                            <label>Start Date<span class="required">*</span></label>
-                            <div class="col-sm-9">
-                                <input id="datePicker" value="" name="StartDate" class="" required />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="form-group ">
-                            <label>End Date<span class="required">*</span></label>
-                            <div class="col-sm-9">
-                                <input id="datePicker" value="" name="EndDate" class="" required />
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
-@*}*@
+}
 
 
 <script src="~/assets/js/custom-date-picker.js"></script>
@@ -96,6 +99,7 @@
 <script>
 $(document).ready(function () {
       $("#datePicker").kendoDatePicker();
+      $("#datePicker2").kendoDatePicker();
     });
 
 
